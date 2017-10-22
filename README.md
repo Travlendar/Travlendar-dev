@@ -1,1 +1,3 @@
 # Travlendar-dev
+
+Travlendar is a web based travel-time-aware calendar. It is now under construction...
