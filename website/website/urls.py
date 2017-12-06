@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^$', 'index.views.home', name='home'),
     url(r'^admin/', admin.site.urls),
     url(r'^index/', include('index.urls')),
+    url(r'^calendarApp/', include('calendarApp.urls')),
 ]
 
 
