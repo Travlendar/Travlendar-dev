@@ -18,9 +18,10 @@ from django.conf.urls import include,url
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
+from index.views import HomeView
 
 urlpatterns = [
-    url(r'^$', 'index.views.home', name='home'),
+    url(r'^$', HomeView.as_view(), name='home'),
     url(r'^admin/', admin.site.urls),
     url(r'^index/', include('index.urls')),
     url(r'^calendarApp/', include('calendarApp.urls')),

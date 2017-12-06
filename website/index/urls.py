@@ -1,10 +1,13 @@
 from django.conf.urls import url
 from django.conf.urls.static import static
-from . import views
+
+from index.views import HomeView
+
 from django.conf import settings
 
 urlpatterns = [
-    url(r'^$', views.home,name='index'),
+    url(r'^$', HomeView.as_view(),name='index'),
+
 ]
 
 if settings.DEBUG:

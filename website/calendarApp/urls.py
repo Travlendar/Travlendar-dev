@@ -5,6 +5,7 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', views.home,name='index'),
+
 ]
 
 if settings.DEBUG:
