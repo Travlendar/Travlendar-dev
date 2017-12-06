@@ -393,7 +393,7 @@ var Calendar = React.createClass({
 						null,
 						React.createElement(
 							'i',
-							{ onClick: this.returnPresent, className: 'fa fa-calendarTemplate-o', 'aria-hidden': 'true' },
+							{ onClick: this.returnPresent, className: 'fa fa-calendarTemp-o', 'aria-hidden': 'true' },
 							React.createElement(
 								'span',
 								null,
@@ -715,7 +715,7 @@ var Calendar = React.createClass({
 									return React.createElement(
 										'div',
 										{ className: 'no-entries', key: e },
-										React.createElement('i', { className: 'fa fa-calendarTemplate-check-o', 'aria-hidden': 'true' }),
+										React.createElement('i', { className: 'fa fa-calendarTemp-check-o', 'aria-hidden': 'true' }),
 										React.createElement(
 											'span',
 											null,
@@ -728,7 +728,7 @@ var Calendar = React.createClass({
 					) : React.createElement(
 						'div',
 						{ className: 'no-entries' },
-						React.createElement('i', { className: 'fa fa-calendarTemplate-check-o', 'aria-hidden': 'true' }),
+						React.createElement('i', { className: 'fa fa-calendarTemp-check-o', 'aria-hidden': 'true' }),
 						React.createElement(
 							'span',
 							null,

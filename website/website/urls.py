@@ -21,10 +21,11 @@ from django.conf import settings
 from index.views import HomeView
 
 urlpatterns = [
+    url(r'^calendarApp/', include('calendarApp.urls')),
     url(r'^$', HomeView.as_view(), name='home'),
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', include('index.urls')),
-    url(r'^calendarApp/', include('calendarApp.urls')),
+
+    #url(r'^index/', include('index.urls')),
 ]
 
 

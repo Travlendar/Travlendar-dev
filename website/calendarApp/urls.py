@@ -1,10 +1,11 @@
 from django.conf.urls import url
 from django.conf.urls.static import static
-from . import views
+
 from django.conf import settings
+from calendarApp.views import Cal_View
 
 urlpatterns = [
-    url(r'^$', views.home,name='index'),
+    url(r'^$', Cal_View.as_view(),name='cal'),
 
 ]
 
