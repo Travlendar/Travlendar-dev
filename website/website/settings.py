@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'index',
     'calendarApp',
+    'login',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -58,7 +59,9 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'DIRS': [os.path.join(BASE_DIR, "index/templates"),
+        os.path.join(BASE_DIR, "calendarApp/templates"),
+        os.path.join(BASE_DIR, "login/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,7 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
-#not: aşağıdaki
+
 STATICFILES_DIRS = [
     "C:\\Users\\temre\\Desktop\\website\\static",
 ]

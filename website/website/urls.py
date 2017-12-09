@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^calendarApp/', include('calendarApp.urls')),
     url(r'^$', HomeView.as_view(), name='home'),
     url(r'^admin/', admin.site.urls),
+    url(r'^login/',include('login.urls'))
 
     #url(r'^index/', include('index.urls')),
 ]
