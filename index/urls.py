@@ -10,7 +10,6 @@ from django.conf import settings
 urlpatterns = [
     url(r'^$', HomeView.as_view(),name='index'),
     url(r'^about$', AboutView.as_view(),name='about'),
-    url(r'^login$', views.login_page, name='login'),
 ]
 
 if settings.DEBUG:

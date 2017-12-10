@@ -19,15 +19,12 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 from index.views import HomeView
-#from index.views import AboutView
 
 urlpatterns = [
     url(r'^calendarApp/', include('calendarApp.urls')),
     url(r'^$', HomeView.as_view(),name='index'),
-    #url(r'^$', AboutView.as_view(),name='about'),
     url(r'^admin/', admin.site.urls),
     url(r'^login/',include('login.urls')),
-
     url(r'^index/', include('index.urls')),
 ]
 
